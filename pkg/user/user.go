@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/akhil/go-serverless-yt/pkg/validators"
+	"github.com/piringraph/serverless-aws/validators"
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-sdk-go/aws"
