@@ -10,7 +10,7 @@ import (
 	"github.com/aws/aws-sdk-go/service/dynamodb"
 	"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbiface"
 	"github.com/aws/aws-sdk-go/service/lambda"
-	"github.com/aws/aws-skd-go/aws/session"
+	"github.com/aws/aws-sdk-go/aws/session"
 )
 
 var(
@@ -20,7 +20,7 @@ var(
 func main() {
 	region := os.Getenv("AWS_REGION")
 	awsSession, err := session.NewSession(&aws.Config{
-		Region: aws.String(region)
+		Region: aws.String(region),
 	},)
 
 	if err!=nil{
